@@ -14,6 +14,10 @@
 ## 截图
 ![Open Zen ClickGUI](img/screenshot.png)
 
+## 原始 Jar + Mapping
+[原始Jar](./mapping/zen-orignial.jar)
+[Mapping](./mapping/zen.mapping)
+
 ## 细节
 经过Opus 4.7长达18秒的分析，Opus认为所有的类由惨遭魔改的Zelix KlassMaster混淆。除了Zelix的Invoke Dynamic和String Encryption外，还有部分未参与任何计算的Interger \ Long变量花指令代码和仅在部分方法中出现的Flow混淆。
 
@@ -31,6 +35,8 @@
 > Zen开发者称，所有的后门都未实现未引用，是由夏天完成的。但笔者在分析其Native时发现了完整引用，暂且蒙古。
 
 经过分析，当你登录Zen后就会自动触发屏幕截图。同时已有用户反馈，当你狗叫Zen开发者后，其开发者将会把你的电脑屏幕截图发送至QQ群内，所以请你不要狗叫Zen开发者。
+
+[详细分析](./mapping/BACKDOOR.md)
 
 ## 状态与注意事项
 - 这是**尽力而为的反混淆结果**，部分符号是根据上下文重建的，可能与原作者的命名意图不一致。
